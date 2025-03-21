@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Reminder</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="neon-container">
+    <header>
+      <h1 class="neon-text">💧 Water Reminder</h1>
+      <p class="sub-text">Track your water intake and stay hydrated!</p>
+    </header>
+
+    <div class="glass-card">
+      <section class="user-info-section">
+        <h2>Enter Your Info</h2>
+        <div class="input-group">
+          <input type="number" id="age" placeholder="Age (years)">
+          <input type="number" id="height" placeholder="Height (cm)">
+          <input type="number" id="weight" placeholder="Weight (kg)">
+          <button id="set-goal" class="neon-btn">Calculate Goal</button>
+        </div>
+      </section>
+
+      <section class="goal-section">
+        <h2>Your Recommended Water Goal</h2>
+        <p id="recommended-goal" class="goal-text">0 ml</p>
+      </section>
+
+      <section class="tracker">
+        <h2>Your Progress</h2>
+        <div class="neon-progress-bar">
+          <div id="progress"></div>
+        </div>
+        <p id="progress-text">0 / 0 ml</p>
+      </section>
+
+      <section class="log-section">
+        <h2>Log Water Intake</h2>
+        <div class="input-group">
+          <input type="number" id="water-intake" placeholder="e.g., 250 ml">
+          <button id="log-water" class="neon-btn">Log Water</button>
+        </div>
+      </section>
+
+      <section class="reminder">
+        <h2>Set Reminders</h2>
+        <div class="input-group">
+          <input type="number" id="reminder-time" placeholder="Interval in minutes">
+          <button id="set-reminder" class="neon-btn">Set Reminder</button>
+        </div>
+        <p id="reminder-status"></p>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
